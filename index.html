@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartOS Icon Packages</title>
+<style>
+:root { --accent: #4f46e5; --border: #e5e7eb; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.container { max-width: 600px; width: 100%; }
+h1 { color: white; text-align: center; margin: 0 0 1rem; font-size: 2rem; }
+.subtitle { color: rgba(255,255,255,.8); text-align: center; margin-bottom: 2.5rem; font-size: .95rem; }
+.cards { display: grid; gap: 1.5rem; }
+.card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 10px 40px rgba(0,0,0,.1); text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 15px 50px rgba(0,0,0,.15); }
+.card h2 { margin: 0 0 .5rem; color: var(--accent); font-size: 1.25rem; }
+.card p { margin: 0 0 1.5rem; color: #6b7280; font-size: .95rem; }
+.card-button { display: inline-block; background: var(--accent); color: white; padding: .5rem 1.5rem; border-radius: 999px; font-size: .9rem; transition: opacity .2s; }
+.card:hover .card-button { opacity: .9; }
+.count { display: inline-block; background: #f3f4f6; color: #6b7280; padding: .25rem .75rem; border-radius: 999px; font-size: .8rem; margin-top: 1rem; }
+.footer { text-align: center; margin-top: 3rem; color: rgba(255,255,255,.6); font-size: .85rem; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>SmartOS Icon Packages</h1>
+<p class="subtitle">Select a package to preview all available icons</p>
+<div class="cards">
+<a class="card" href="smartos_icons/">
+<h2>SmartOS Icons</h2>
+<p>Main icon package with 6 design styles: linear, bold, outline, twotone, bulk, and broken.</p>
+<button class="card-button">View Preview →</button>
+<div class="count">4,554 icons across 6 styles</div>
+</a>
+<a class="card" href="smartos_addon_icons/">
+<h2>SmartOS Addon Icons</h2>
+<p>Specialized icon package with 2 styles: outline and bold.</p>
+<button class="card-button">View Preview →</button>
+<div class="count">29 icons across 2 styles</div>
+</a>
+</div>
+<div class="footer">
+Powered by <a href="https://www.figma.com" target="_blank" style="color: white;">Figma</a>
+</div>
+</div>
+</body>
+</html>
